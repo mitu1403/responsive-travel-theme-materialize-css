@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>travel.io</title>
+  <link rel="icon" href="img/travel-icon-png-4962.png">
+  <!--=== FONT AWESOME ICONS ===-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!--=== MATERIAL ICONS ===-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--=== BOX ICONS ===-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">         
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="home" class="scrollspy">
+  <div class="navbar-fixed">
+    <nav class="transparent">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">travel.io</a>
+          <a href="index.html" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#popular">Popular Places</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav " id="mobile-nav">
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="index.html" class="brand-logo sidenav-logo">travel.io</a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#home">Home <i class="material-icons" style="color: white;">home</i></a></li>
+    <li><a href="#search">Search <i class="material-icons" style="color: white;">search</i></a></li>
+    <li><a href="#popular">Popular Places <i class="material-icons" style="color: white;">place</i></a></li>
+    <li><a href="#gallery">Gallery <i class="material-icons" style="color: white;">collections</i></a></li>
+    <li><a href="#contact">Contact <i class="material-icons" style="color: white;">call</i></a></li>
+  </ul>
+
+  <!-- SLIDER -->  
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/slider-img1.jpg" alt="" class="slider-bg-img">
+        <div class="caption center-align">
+          <h2><br>Take Your Dream Vacation<br></h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Find specials and deals, compare tours, activities, and excursions!</h5>
+          <br><br>
+          <a href="#!" class="btn transparent waves-effect waves-light
+          btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/slider-img2.jpg" alt="" class="slider-bg-img">
+        <div class="caption left-align">
+          <h2><br>Experience The Magic<br></h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Find something tailored to your travel needs, at the best price.!</h5>
+          <br><br>
+          <a href="#!" class="btn transparent waves-effect waves-light
+          btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/photo-1530625981245-43987dcfb80d.jfif" alt="" class="slider-bg-img">
+        <div class="caption right-align">
+          <h2><br>Ready for Your Next Adventure?<br></h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Find Your Adventure Inspiration Here!</h5>
+          <br>
+          <a href="#!" class="btn transparent waves-effect waves-light
+          btn-large">Learn More</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- SEARCH -->
+  <section id="search" class="section section-search center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <span><br> Search Destinations</span>
+          <div class="input-field">
+            <input type="text" class="transparent grey-text autocomplete" id="autocomplete-input" placeholder="Cox's Bazar, Sent Martin etc...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    // Sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav,{});
+
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+    });
+
+    // Scroll-spy
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.scrollspy');
+      var instances = M.ScrollSpy.init(elems, options);
+    });
+
+
+  </script>
+</body>
+</html>

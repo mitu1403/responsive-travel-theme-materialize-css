@@ -1,0 +1,74 @@
+@font-face {
+  font-family: pacifico;
+  src: url(fonts/Pacifico-Regular.ttf);
+}
+
+.brand-logo {
+  font-family: pacifico;
+}
+.sidenav {
+  background-image: url(img/slider-img2.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+.sidenav li a {
+  color: white;
+}
+ul li .sidenav-logo {
+  font-size: 40px;
+}
+.slider {
+  margin-top: -4.75%;
+}
+.btn {
+  border: 1px solid white;
+  font-weight: bold;
+}
+.caption h2 {
+  font-weight: bolder;
+}
+
+.section-search span {
+  font-size: 25px;
+  color: #424242;
+  font-family: pacifico;
+}
+.section-search input {
+  padding: 5px 15px !important;
+  font-size: 17px !important;
+  width: 80%;
+  background: #232526;
+  background: -webkit-linear-gradient(to bottom, #414345, #232526);
+  background: linear-gradient(to bottom, #414345, #232526);
+  border-radius: 100px !important;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.4) !important;
+}
+
+@media (max-width: 1352px) {
+  .slider {
+    margin-top: -6%;
+  }
+}
+@media (max-width: 1060px) {
+  .slider {
+    margin-top: -7%;
+  }
+}
+@media (max-width: 910px) {
+  .slider {
+    margin-top: -8%;
+  }
+}
+@media (max-width: 793px) {
+  .slider {
+    margin-top: -18.5%;
+  }
+  .caption h2 {
+    font-weight: 600;
+  }
+}
+@media (max-width: 550px) {
+  .section-search .input-field {
+    margin-left: -9%;
+  }
+}
