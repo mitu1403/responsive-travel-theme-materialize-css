@@ -3,6 +3,9 @@
   src: url(fonts/Pacifico-Regular.ttf);
 }
 
+* {
+  overflow-x: hidden;
+}
 .brand-logo {
   font-family: pacifico;
 }
