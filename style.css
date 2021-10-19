@@ -3,7 +3,7 @@
   src: url(fonts/Pacifico-Regular.ttf);
 }
 
-* {
+body {
   overflow-x: hidden;
 }
 .brand-logo {
